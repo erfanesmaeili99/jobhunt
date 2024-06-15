@@ -1,0 +1,28 @@
+<svg width="144" height="144" viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_4_71)">
+<circle cx="72" cy="72" r="47" fill="#6A38C2"/>
+</g>
+<g filter="url(#filter1_b_4_71)">
+<circle cx="72" cy="72" r="48" fill="#6A38C2"/>
+</g>
+<path d="M61 58.18C61 56.2655 61 55.3082 61.3994 54.7806C61.7473 54.3209 62.279 54.0364 62.8547 54.002C63.5154 53.9626 64.3123 54.4936 65.9059 55.5556L86.6449 69.3756C87.9617 70.2531 88.6201 70.6918 88.8496 71.2448C89.0501 71.7283 89.0501 72.2717 88.8496 72.7552C88.6201 73.3082 87.9617 73.7469 86.6449 74.6244L65.9059 88.4444C64.3123 89.5064 63.5154 90.0374 62.8547 89.9979C62.279 89.9636 61.7473 89.6791 61.3994 89.2194C61 88.6917 61 87.7345 61 85.82V58.18Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_d_4_71" x="0" y="0" width="144" height="144" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="5" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_4_71"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="10"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.415686 0 0 0 0 0.219608 0 0 0 0 0.760784 0 0 0 0.8 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_71"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_71" result="shape"/>
+</filter>
+<filter id="filter1_b_4_71" x="12" y="12" width="120" height="120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="6"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_4_71"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_4_71" result="shape"/>
+</filter>
+</defs>
+</svg>

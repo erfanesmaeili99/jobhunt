@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./sytle.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>jobhunt</title>
+</head>
+
+<body>
+
+    <header class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="../image/Jobhunt.svg" alt="jobhunt">
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full p-4  md:block md:w-auto " id="navbar-default">
+                <ul
+                    class="font-medium items-center flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-700"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="btn  block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-2 border-first
+                            md:rounded-2xl md:hover:text-blue-700  dark:text-white md:dark:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Login</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="btn block py-2 px-3 text-white bg-first rounded hover:bg-gray-100 md:hover:bg-transparent 
+                            md:rounded-2xl hover:text-blue-800 md:border-2 border-first dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main >
+
+        <div
+            class="flex justify-center mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 pt-10 text-center lg:pt-15 relative ">
+
+            <div style="width: fit-content;height: fit-content; ">
+                <div class=" w-fit bg-blue-200  " style="text-shadow: 5px 5px 5px #999; ">
+                    <div class="z-0 ">
+                        <canvas id="myCanvas" class=" top-0 left-0 w-full h-full absolute   " width="1600"
+                            height="1200"></canvas>
+                    </div>
+                    <div class="relative bg-white z-10">
+                        <div class=" w-full mb-5 flex justify-center relative  ">
+                            <div
+                                class="text-secont-100 flex items-start justify-center bg-secont-200 p-1 w-60 rounded-2xl">
+                                <img src="../coat.jpg" alt="coat" class="w-7 h-7 mr-2">
+                                <div> No 1. JOb hunt Website</div>
+                            </div>
+                        </div>
+                        <div>
+                            <h1
+                                class=" bg-white mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl ">
+                                Search,Apply & <br> Get your<!-- --> <span
+                                    class="relative whitespace-nowrap text-blue-600"><svg aria-hidden="true"
+                                        viewBox="0 0 418 42"
+                                        class="absolute left-0 top-2/3 h-[0.58em] w-full fill-blue-300/70"
+                                        preserveAspectRatio="none">
+                                        <path
+                                            d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
+                                        </path>
+                                    </svg><span class="text-first">Dream Job</span></span> <!-- --></h1>
+                        </div>
+                        <div>
+                            <p class=" mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
+                                Most
+                                bookkeeping software is
+                                accurate, but hard to use. We make the opposite trade-off, and hope you don’t get
+                                audited.
+                            </p>
+                        </div>
+                        <div class=" mt-10 flex justify-center gap-x-4 ">
+                            <a class="m-4 group inline-flex items-center justify-center rounded-xl py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-first text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900"
+                                variant="solid" color="slate" href="https://salient.tailwindui.com/register">Get 6
+                                months
+                                free</a>
+                            <a class="group inline-flex  bg-white items-center justify-center  py-2 px-4      "
+                                variant="outline" color="slate" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                                <img src="../image/play.svg" alt="play" class="w-14 h-14">
+                                <span class="ml-3">How it
+                                    works?</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full h-5 "></div>
+        <div class="w-full flex flex-col gap-16 h-40">
+            <div style="position: relative;color: white;text-align: center;">
+                <div id="move" class="container" style="position: absolute;">
+                    <button class="icon">Full Stack Devenloper</button>
+                    <button class="icon text-first border-2 border-first">Back-end Developer</button>
+                    <button class="icon">Graphic Disigner</button>
+                    <button class="icon">Senior Accountant</button>
+                    <button class="icon">UI Designer</button>
+                    <button class="icon text-first border-2 border-first">Employer Branding Associate</button>
+                    <button class="icon">Lead DevOps Engineer</button>
+                </div>
+                <div id="move2" class="container" style="position: absolute;">
+                    <button class="icon">Full Stack Devenloper</button>
+                    <button class="icon text-first border-2 border-first">Back-end Developer</button>
+                    <button class="icon">Graphic Disigner</button>
+                    <button class="icon">Senior Accountant</button>
+                    <button class="icon">UI Designer</button>
+                    <button class="icon text-first border-2 border-first">Employer Branding Associate</button>
+                    <button class="icon">Lead DevOps Engineer</button>
+                </div>
+
+            </div>
+
+            <div style="position: relative;color: white;text-align: center;">
+                <div id="move1" class="container " style="position: absolute;">
+
+                    <button class="icon">Back-end Developer</button>
+                    <button class="icon">Senior Accountant</button>
+                    <button class="icon text-first border-2 border-first">Full Stack Devenloper</button>
+                    <button class="icon">UI Designer</button>
+                    <button class="icon">Graphic Disigner</button>
+                    <button class="icon">Lead DevOps Engineer</button>
+                    <button class="icon">Employer Branding Associate</button>
+                </div>
+                <div id="move12" class="container" style="position: absolute;">
+
+                    <button class="icon">Back-end Developer</button>
+                    <button class="icon">Senior Accountant</button>
+                    <button class="icon text-first border-2 border-first">Full Stack Devenloper</button>
+                    <button class="icon">UI Designer</button>
+                    <button class="icon">Graphic Disigner</button>
+                    <button class="icon text-first border-2 border-first">Lead DevOps Engineer</button>
+                    <button class="icon">Employer Branding Associate</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-full  h-fit flex flex-col justify-center sm:px-6 lg:px-8 pb-16 pt-10 text-center lg:pt-15">
+            <div class="pt-5">
+                <h1
+                    class="bg-white mx-auto max-w-4xl font-display text-xl font-medium tracking-tight text-slate-900 sm:text-5xl  ">
+                    <b>Get Hired in <span class="text-first">4 Quick Easy Steps</span></b>
+                </h1>
+                <p class="mt-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, repudiandae.
+                </p>
+                <p class="mt-5">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <div class="absolute mt-20">
+                <img src="../image/telegram.svg" alt="send" class="w-full pr-10">
+            </div>
+
+            <div class="flex  justify-between mt-10 px-32 gap-5">
+
+                <div class="card">
+                    <img src="../image/contact.svg" alt="contact" class="w-14 h-14 ">
+                    <div class="flex-col justify-end text-left pt-5">
+                        <h1 class="font-bold text-lg">Create an Account</h1>
+                        <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci dicta est
+                            molestias alias soluta, aut minima.</p>
+                    </div>
+                </div>
+                <div class="card mt-10 ">
+                    <img src="../image/search.svg" alt="search" class="w-14 h-14">
+                    <div class="flex-col justify-end text-left pt-5">
+                        <h1 class="font-bold text-lg">Search Job</h1>
+                        <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci dicta est
+                            molestias alias soluta, aut minima.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../image/document.svg" alt="document" class="w-14 h-14">
+                    <div class="flex-col justify-end text-left pt-5">
+                        <h1 class="font-bold text-lg">Upload CV/ Resume</h1>
+                        <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci dicta est
+                            molestias alias soluta, aut minima..</p>
+                    </div>
+                </div>
+
+                <div class="card mt-10 ">
+                    <img src="../image/bag.svg" alt="bag" class="w-14 h-14">
+                    <div class="flex-col justify-end text-left pt-5">
+                        <h1 class="font-bold text-lg">Get Job</h1>
+                        <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci dicta est
+                            molestias alias soluta, aut minima.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full  h-fit flex flex-col justify-center sm:px-6 lg:px-8 pb-16 pt-10 text-center lg:pt-15">
+            <div class="pt-5">
+                <h1
+                    class="bg-white mx-auto max-w-4xl font-display text-xl font-medium tracking-tight text-slate-900 sm:text-5xl  ">
+                    <b> <span class="text-first">Countless Career Options </span></b>Are Waiting
+                </h1>
+                <h1
+                    class="bg-white mx-auto max-w-4xl font-display text-xl font-medium tracking-tight text-slate-900 sm:text-5xl  ">
+                    For You to Explore </h1>
+
+            </div>
+
+
+            <div class="flex  justify-between mt-10 px-32 gap-5">
+
+                <div class="card ">
+                    <img src="../image/career option/Design.svg" alt="contact" class="w-14 h-14 ">
+                    <div class="flex-col justify-end text-left pt-5">
+                        <h1 class="font-bold text-lg">Design</h1>
+                        <p class="text-sm">200+ jobs operings</p>
+                    </div>
+                </div>
+                <div class="card ">
+                    <img src="../image/career option/chart.svg" alt="search" class="w-14 h-14">
+                    <div class="flex-col justify-end text-left pt-5">
+                        <h1 class="font-bold text-lg">Sales</h1>
+                        <p class="text-sm">330+ jobs operings</p>
+                    </div>
+                </div>
+
+                <div class="card ">
+                    <img src="../image/career option/marketing.svg" alt="document" class="w-14 h-14">
+                    <div class="flex-col justify-end text-left pt-5">
+                        <h1 class="font-bold text-lg">Marketing</h1>
+                        <p class="text-sm">500+ jobs operings</p>
+                    </div>
+                </div>
+
+                <div class="card ">
+                    <img src="../image/career option/wallet.svg" alt="bag" class="w-14 h-14">
+                    <div class="flex-col justify-end text-left pt-5">
+                        <h1 class="font-bold text-lg">Finance</h1>
+                        <p class="text-sm">200+ jobs operings</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex  justify-between mt-10 px-32 gap-5">
+
+                <div class="card ">
+                    <img src="../image/career option/car.svg" alt="contact" class="w-14 h-14 ">
+                    <div class="flex-col justify-end text-left pt-5">
+                        <h1 class="font-bold text-lg">Automobile</h1>
+                        <p class="text-sm">250+ jobs operings</p>
+                    </div>
+                </div>
+                <div class="card ">
+                    <img src="../image/career option/truck.svg" alt="search" class="w-14 h-14">
+                    <div class="flex-col justify-end text-left pt-5">
+                        <h1 class="font-bold text-lg">Logistics/ Delivery</h1>
+                        <p class="text-sm">20+ jobs operings</p>
+                    </div>
+                </div>
+
+                <div class="card ">
+                    <img src="../image/career option/admin.svg" alt="document" class="w-14 h-14">
+                    <div class="flex-col justify-end text-left pt-5">
+                        <h1 class="font-bold text-lg">Admin</h1>
+                        <p class="text-sm">100+ jobs operings</p>
+                    </div>
+                </div>
+
+                <div class="card ">
+                    <img src="../image/career option/Construnction.svg" alt="bag" class="w-14 h-14">
+                    <div class="flex-col justify-end text-left pt-5">
+                        <h1 class="font-bold text-lg">Construnction</h1>
+                        <p class="text-sm">500+ jobs operings</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-8">
+                <button
+                    class="bg-first text-white w-fit px-8 p-2 rounded-xl hover:bg-white hover:border-2 hover:border-first hover:text-first ">View
+                    All Catrgories </button>
+            </div>
+        </div>
+
+        <div class="w-full  h-fit  justify-center sm:px-6 lg:px-40 pb-16 pt-10 text-center lg:pt-15 ">
+            <div class="pt-5 text-left flex flex-col">
+                <h1
+                    class="bg-white max-w-4xl font-display text-xl font-medium tracking-tight text-slate-900 sm:text-5xl  ">
+                    <b><span class="text-first">Latest and Top</span> JOb Openings</b>
+                </h1>
+                <p class="mt-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, repudiandae.
+                </p>
+                <div class="flex justify-between">
+                    <p class="mt-5">Lorem ipsum dolor sit amet.</p>
+                    <button
+                        class="text-sm px-5 rounded-xl border-2 border-gray-200 text-first hover:bg-first hover:text-white hover:border-first">View
+                        All Jobs</button>
+                </div>
+
+            </div>
+
+
+            <div class=" mt-20 gap-5">
+                <div class="flex justify-between gap-5 ">
+                    <div class="carda ">
+                        <div class="flex">
+                            <img src="../image/job opening/figma.png" alt="contact"
+                                class="w-14 h-14 m-2 rounded-full shadow-md">
+                            <div class="m-2 text-left">
+                                <h1 class="font-bold">Figma</h1>
+                                <p>USA</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-col justify-end text-left pt-5">
+                            <h1 class="font-bold text-lg">Senior Product Designer</h1>
+                            <p class="text-sm"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+                                sapiente.</p>
+                        </div>
+                        <div class="flex mt-4 gap-3">
+                            <button class="btnblue"> 12 Positions</button>
+                            <button class="btnorange">Full Time</button>
+                            <button class="btngreen">%148,000/Year</button>
+                        </div>
+                    </div>
+
+                    <div class="carda">
+                        <div class="flex">
+                            <img src="../image/job opening/microsoft.svg" alt="document"
+                                class="w-14 h-14 m-2 rounded-full shadow-md">
+                            <div class="m-2 text-left">
+                                <h1 class="font-bold">Google Inc</h1>
+                                <p>USA</p>
+                            </div>
+                        </div>
+                        <div class="flex-col justify-end text-left pt-5">
+                            <h1 class="font-bold text-lg">Project Manager</h1>
+                            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci dicta
+                                est</p>
+                        </div>
+                        <div class="flex mt-4 gap-3">
+                            <button class="btnblue"> 2 Positions</button>
+                            <button class="btnorange">Full Time</button>
+                            <button class="btngreen">%45,000/Year</button>
+                        </div>
+                    </div>
+
+                    <div class="carda">
+                        <div class="flex">
+                            <img src="../image/job opening/linkedin.svg" alt="document"
+                                class="w-14 h-14 m-2 rounded-full shadow-md">
+                            <div class="m-2 text-left">
+                                <h1 class="font-bold">Linkedin</h1>
+                                <p>dev</p>
+                            </div>
+                        </div>
+                        <div class="flex-col justify-end text-left pt-5">
+                            <h1 class="font-bold text-lg">Full Stack Developer</h1>
+                            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci dicta
+                                est</p>
+                        </div>
+                        <div class="flex mt-4 gap-3">
+                            <button class="btnblue"> 10 Positions</button>
+                            <button class="btnorange">Full Time</button>
+                            <button class="btngreen">$45,000/Year</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-between gap-5 mt-5">
+                    <div class="carda ">
+                        <div class="flex">
+                            <img src="../image/job opening/amazon.svg" alt="contact"
+                                class="w-14 h-14 m-2 rounded-full shadow-md ">
+                            <div class="m-2 text-left">
+                                <h1 class="font-bold">Amozon</h1>
+                                <p>USA</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-col justify-end text-left pt-5">
+                            <h1 class="font-bold text-lg">Front-end Developer</h1>
+                            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci dicta
+                                est</p>
+                        </div>
+                        <div class="flex mt-4 gap-3">
+                            <button class="btnblue"> 20 Positions</button>
+                            <button class="btnorange">Full Time</button>
+                            <button class="btngreen">$105,000/Year</button>
+                        </div>
+                    </div>
+
+                    <div class="carda">
+                        <div class="flex">
+                            <img src="../image/job opening/twitter.svg" alt="search"
+                                class="w-14 h-14 m-2 rounded-full shadow-md">
+                            <div class="m-2 text-left">
+                                <h1 class="font-bold">twitter</h1>
+                                <p>USA</p>
+                            </div>
+                        </div>
+                        <div class="flex-col justify-end text-left pt-5">
+                            <h1 class="font-bold text-lg">ReacJS Developer</h1>
+                            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci dicta
+                                est</p>
+                        </div>
+                        <div class="flex mt-4 gap-3">
+                            <button class="btnblue"> 6 Positions</button>
+                            <button class="btnorange">Full Time</button>
+                            <button class="btngreen">$98,000/Year</button>
+                        </div>
+                    </div>
+
+                    <div class="carda">
+
+                        <div class="flex">
+                            <img src="../image/job opening/google.svg" alt="search"
+                                class="w-14 h-14 m-2 rounded-full shadow-md">
+                            <div class="m-2 text-left">
+                                <h1 class="font-bold">Microsoft</h1>
+                                <p>USA</p>
+                            </div>
+                        </div>
+                        <div class="flex-col justify-end text-left pt-5">
+                            <h1 class="font-bold text-lg">Python Developer</h1>
+                            <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci dicta
+                                est</p>
+                        </div>
+                        <div class="flex mt-4 gap-3">
+                            <button class="btnblue"> 9 Positions</button>
+                            <button class="btnorange">Full Time</button>
+                            <button class="btngreen">$80,000/Year</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="w-full  h-fit  justify-center sm:px-6 lg:px-40 pb-16 pt-10 text-center lg:pt-15 ">
+            <div class="pt-5 text-left flex flex-col">
+                <h1
+                    class="bg-white max-w-4xl font-display text-xl tracking-tight text-slate-900 sm:text-5xl font-bold ">
+                    What We Offer
+                </h1>
+                <p class="mt-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, repudiandae.
+                </p>
+                <p class="mt-5">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="flex gap-5  mt-10">
+                <div class="w-1/3 ">
+                    <img src="../image/whatWeOffer/jobRecommendation.jpg" alt="recommendation" class="rounded-xl">
+                    <div class="flex p-5 text-center ">
+                        <p class="p-4">01</p>
+                        <div class="border-l-2 border-first text-left pl-5">
+                            <p class="font-bold text-xl ">JOb Recommendation</p>
+                            <p class="text-sm pt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/3">
+                    <img src="../image/whatWeOffer/create&BuildProfile.jpg" alt="create and build profile"
+                        class="rounded-xl">
+                    <div class="flex p-5 text-center ">
+                        <p class="text-xl pr-2">02</p>
+                        <p class="font-bold border-l-2 text-xl border-first text-left pl-5 ">Create & Build Profile</p>
+                    </div>
+                </div>
+                <div class="w-1/3">
+                    <img src="../image/whatWeOffer/careerConsultation.jpg" alt="career consultation" class="rounded-lg">
+                    <div class="flex p-5 text-center ">
+                        <p class="text-xl pr-2">03</p>
+                        <p class="font-bold border-l-2 text-xl border-first text-left pl-5 ">Career Consultation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--start carousel -->
+        <div class="w-full mt-10 justify-center text-center">
+            <div>
+                <h1 class="font-display text-xl sm:text-5xl font-bold ">Testimonials</h1>
+                <p class="mt-5 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet maxime dicta
+                    maiores? Ad, explicabo magni.<br> Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="h-40"></div>
+        </div>
+        <div class="flex justify-center ">
+            <div class="w-1/2 h-52 rounded-lg" style="background-color: #363636; ">
+    
+            </div>
+        </div>
+    </main>
+
+    <footer class="h-fit " style="background-color: #FAFAFA;">
+        
+        <div class="w-1/2 h-32 "></div>
+        <div class="w-full  h-fit  justify-center sm:px-6 lg:px-40 pb-16 pt-10 lg:pt-15 flex gap-16 text-sm">
+            <div class="w-2/6 flex-col text-left">
+                <img src="../image/Jobhunt.svg" alt="jobhunt">
+                <p class="pt-5 text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed magnam, ratione, error repellendus at nemo architecto ab praesentium est esse quis aliquam placeat blanditiis molestias cupiditate, maiores voluptatem!</p>
+            </div>
+            <div class="w-1/6">
+                <p class="font-bold textbase">Quick Links</p>
+                <p class="pt-5">Home</p>
+                <p>AboutUs</p>
+                <p>Jobs</p>
+                <p>Services</p>
+                <p>Conranst Us</p>
+            </div>
+            <div class="w-1/6">
+                <p class="font-bold text-base">Legal</p>
+                <p class="pt-5">Terrs of use</p>
+                <p>Help Center</p>
+                <p>Privacy Palicy</p>
+                <p>Catplaints</p>
+            </div>
+            <div class="w-1/6">
+                <p class="font-bold text-base">Follow Us</p>
+                <p class="pt-5">Facebook</p>
+                <p>Instagram</p>
+                <p>Linkedin</p>
+                <p>Twitter</p>
+                <p>Youtube</p>
+            </div>
+            <div class="w-1/6">
+                <p class="font-bold text-base">Contact Us</p>
+                <div class="flex pt-5">
+                    <img src="../image/phone.svg" alt="phone" class="w-5 h-5 mr-5">
+                    <p> (480) 555-0405 </p>
+                </div>
+                <div class="flex pt-5">
+                    <img src="../image/location.svg" alt="phone" class="w-5 h-5 mr-5">
+                    <p> 4517 Washengton Ave <br> Manchester </p>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="flex justify-between text-xs px-40 py-5 ">
+            <p>© Company 2012 jobhunt - All might</p>
+            <p>trance & confidence</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

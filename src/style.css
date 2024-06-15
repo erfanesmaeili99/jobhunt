@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    @apply bg-white rounded overflow-hidden shadow-xl relative w-1/4 h-1/5 z-20 p-10
+}
+.card:hover{
+    @apply bg-first text-white
+}
+.carda {
+    @apply bg-white shadow-xl rounded w-1/3 h-1/4 p-10 
+}
+.carda:hover{
+    @apply bg-first text-white
+}
+.btnblue {
+    @apply text-btnb-100 bg-btnb-200 px-3 p-1 rounded-md font-bold hover:bg-btnb-100 hover:text-white text-xs
+}
+.btnorange{
+    @apply text-btno-100 bg-btno-200 px-3 rounded-md font-bold hover:bg-btno-100 hover:text-white text-xs
+}
+.btngreen{
+    @apply text-btng-100 bg-btng-200 px-3 rounded-md font-bold hover:bg-btng-100 hover:text-white text-xs
+}
